@@ -1,0 +1,78 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin-top: 60px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00eaff;
+  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5rem;
+  color: #00ffc3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #00eaff;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.cell:hover {
+  background-color: rgba(0, 234, 255, 0.1);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #00eaff;
+}
+
+.status {
+  font-size: 1rem;
+  margin: 1rem 0;
+  text-shadow: 0 0 3px #00ffc3;
+}
+
+.reset-btn {
+  font-size: 1rem;
+  padding: 12px 30px;
+  background-color: #00eaff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00eaff;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: #00c8d6;
+  transform: scale(1.05);
+}
